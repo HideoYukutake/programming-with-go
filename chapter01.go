@@ -4,9 +4,9 @@ import "fmt"
 
 func main() {
 	// Print my name.
-	fmt.Printf("Hello, Hideo!\n")
+	fmt.Println("Hello, Hideo!")
 	// Print hello world.
-	fmt.Printf("Hello, world\n")
+	fmt.Println("Hello, world")
 	// Print world in Japanese.
-	fmt.Printf("Hello, 世界\n")
+	fmt.Println("Hello, 世界")
 }
