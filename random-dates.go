@@ -26,10 +26,8 @@ func main() {
 	case 4, 6, 9, 11:
 		daysInMonth = 30
 	}
-	count := 0
-	for count < 10 {
+	for count := 0; count < 10; count++ {
 		day := rand.Intn(daysInMonth) + 1
 		fmt.Println(era, year, month, day)
-		count++
 	}
 }
