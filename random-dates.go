@@ -14,7 +14,7 @@ func isLeapYear(year int) bool {
 
 func main() {
 	rand.Seed(time.Now().UnixNano())
-	year := 2100
+	year := rand.Intn(2100) + 1
 	month := rand.Intn(12) + 1
 	daysInMonth := 31
 	switch month {
@@ -26,6 +26,10 @@ func main() {
 	case 4, 6, 9, 11:
 		daysInMonth = 30
 	}
-	day := rand.Intn(daysInMonth) + 1
-	fmt.Println(era, year, month, day, daysInMonth)
+	count := 0
+	for count < 10 {
+		day := rand.Intn(daysInMonth) + 1
+		fmt.Println(era, year, month, day)
+		count++
+	}
 }
